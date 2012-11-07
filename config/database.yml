@@ -10,3 +10,6 @@ development: &development
 test: &test
   <<: *development
   database: sample_hame_app_test<%= ENV['TEST_ENV_NUMBER'] %>
+
+cucumber:
+  <<: *test
