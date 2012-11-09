@@ -3,9 +3,9 @@
     .alert.alert-error
       The form contains
       = succeed '.' do
-        = pluralize(@user.errors.count, 'error')
+        = pluralize(object.errors.count, 'error')
     %ul
-      - @user.errors.full_messages.each do |msg|
+      - object.errors.full_messages.each do |msg|
         %li
           *
           = msg
