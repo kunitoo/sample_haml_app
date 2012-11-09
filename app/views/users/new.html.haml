@@ -4,5 +4,5 @@
 .row
   .span6.offset3
     = form_for(@user) do |f|
-      = render 'fields', f: f
+      = render 'fields', object: f.object
       = f.submit 'Create my account', class: 'btn btn-large btn-primary'
