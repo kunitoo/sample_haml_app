@@ -21,7 +21,7 @@ body {
 }
 
 section {
-  orverflow: auto;
+  overflow: auto;
 }
 
 textarea {
@@ -117,7 +117,7 @@ footer {
 
 aside {
   section {
-    padding: 10px, 0;
+    padding: 10px 0;
     border-top: 1px solid $grayLight;
     &:first-child {
       border: 0;
@@ -135,11 +135,6 @@ aside {
       margin-bottom: 3px;
     }
   }
-
-  textarea {
-    height: 100px;
-    margin-bottom: 5px;
-  }
 }
 
 .gravatar {
@@ -153,7 +148,7 @@ input, textarea, select, .uneditable-input {
   border: 1px solid #bbb;
   width: 100%;
   padding: 10px;
-  height: auto !important;
+  height: auto;
   margin-bottom: 15px;
   @include box_sizing;
 }
@@ -204,4 +199,16 @@ input, textarea, select, .uneditable-input {
 
 .timestamp {
   color: $grayLight;
+}
+
+.gravatar {
+  float: left;
+  margin-right: 10px;
+}
+
+aside {
+  textarea {
+    height: 100px;
+    margin-bottom: 5px;
+  }
 }
