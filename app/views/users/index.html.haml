@@ -5,8 +5,6 @@
 
 %ul.users
   - @users.each do |user|
-    %li
-      = gravatar_for user, size: 52
-      = link_to user.name, user
+    = render user
 
 = will_paginate
